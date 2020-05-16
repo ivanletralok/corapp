@@ -14,4 +14,4 @@ app.use(express.json())
 app.use(require('./routes/api.routes'))
 
 
-app.listen(app.get('port'), () => console.log("server run port: 3000"))
+app.listen(app.get('port'), () => console.log("server run port:" + app.get('port')))
